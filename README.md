@@ -17,18 +17,18 @@ A single page landing site for Kevin Wilson to promote his voice acting business
    - `@import 'variables';`
    - `@import 'globals';`
 4. Add css rules for `html`, `*`, and `body` tags in `_globals.scss`
-  ```html {
-      font-size: 100%;
-      box-sizing: border-box;
-  }
+    html {
+        font-size: 100%;
+        box-sizing: border-box;
+    }
 
-  *, *::before, *::after {
-      box-sizing: inherit;
-  }
+    *, *::before, *::after {
+        box-sizing: inherit;
+    }
 
-  body {
-      margin: 0;
-      padding: 0;
-      font-family: 'Raleway', sans-serif;
-      line-height: 1.3;
-  }```
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Raleway', sans-serif;
+        line-height: 1.3;
+    }

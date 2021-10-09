@@ -41,4 +41,7 @@ A single page landing site for Kevin Wilson to promote his voice acting business
         console.log('success');
         ```
    - `<script src='/app/js/script.js'></script>`
-  
+
+
+## Resources and attributions
+[Sign of microphone icon 573392 Vector Art at Vecteezy]("https://www.vecteezy.com/free-vector/podcast-mic">Podcast Mic Vectors by Vecteezy)  

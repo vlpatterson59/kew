@@ -17,7 +17,7 @@ A single page landing site for Kevin Wilson to promote his voice acting business
    - `@import 'variables';`
    - `@import 'globals';`
 4. Add css rules for `html`, `*`, and `body` tags in `_globals.scss`
-   ```
+   ```scss
     html {
         font-size: 100%;
         box-sizing: border-box;
@@ -34,3 +34,11 @@ A single page landing site for Kevin Wilson to promote his voice acting business
         line-height: 1.3;
     }
     ```
+5. Select font style(s) and font weight(s) and embed links in `<head>` section of `index.html`
+6. Create a `script.js` stub file in `/app/js and add a `<script></script>` to `<body>` of `index.html`
+   - `script.js`
+        ```js
+        console.log('success');
+        ```
+   - `<script src='/app/js/script.js'></script>`
+  

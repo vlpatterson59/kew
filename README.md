@@ -17,6 +17,7 @@ A single page landing site for Kevin Wilson to promote his voice acting business
    - `@import 'variables';`
    - `@import 'globals';`
 4. Add css rules for `html`, `*`, and `body` tags in `_globals.scss`
+   ```
     html {
         font-size: 100%;
         box-sizing: border-box;
@@ -32,3 +33,4 @@ A single page landing site for Kevin Wilson to promote his voice acting business
         font-family: 'Raleway', sans-serif;
         line-height: 1.3;
     }
+    ```

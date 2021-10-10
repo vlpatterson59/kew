@@ -5,13 +5,25 @@
 ## Colors
 
 ### Primary
-- Shade of Aqua: #00e0ff (https://www.htmlcsscolor.com/hex/00E0FF)
-- Shade of Baby Blue: #74f9ff (https://www.htmlcsscolor.com/hex/74f9ff)
-- Shade of Pale Turquoise: #a6fff2 (https://www.htmlcsscolor.com/hex/a6fff2)
-- Shade of Honeydew: #e0ffe0 (https://www.htmlcsscolor.com/hex/e0ffe0)
+#### Theme 1
+- approx Viking: #56BABF (https://www.htmlcsscolor.com/hex/56BABF)
+- approx Aqua: #00e0ff (https://www.htmlcsscolor.com/hex/00E0FF)
+- approx Baby Blue: #74f9ff (https://www.htmlcsscolor.com/hex/74f9ff)
+- approx Pale Turquoise: #a6fff2 (https://www.htmlcsscolor.com/hex/a6fff2)
+- approx Honeydew: #e8ffe8 (https://www.htmlcsscolor.com/hex/e8ffe8)
 
-### Neutral
+#### Theme 2
+- approx Claret: #7e1334 (https://www.htmlcsscolor.com/hex/)
+- approx Mariner: #3d6cb9 (https://www.htmlcsscolor.com/hex/3D6CB9)
+- approx DeepSkyBlue: #00d1ff (https://www.htmlcsscolor.com/hex/00D1FF)
+- approx Aqua: #00fff0 (https://www.htmlcsscolor.com/hex/00FFF0)
+- approx Ivory: #fafaf6 (https://www.htmlcsscolor.com/hex/FAFAF6)
 
+### Neutrals
+- approx Manatee: #9698a6 (https://www.htmlcsscolor.com/hex/9698A6)
+- approx Solitude: #f3f4f6 (https://www.htmlcsscolor.com/hex/F3F4F6)
+- approx Snow: #fafafa (https://www.htmlcsscolor.com/hex/FAFAFA)
+- White: #ffffff (https://www.htmlcsscolor.com/hex/FFFFFF)
 
 ### Dark Mode
 

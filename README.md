@@ -44,4 +44,6 @@ A single page landing site for Kevin Wilson to promote his voice acting business
 
 
 ## Resources and attributions
-[Sign of microphone icon 573392 Vector Art at Vecteezy](https://www.vecteezy.com/free-vector/podcast-mic)  
+[Sign of microphone icon 573392 Vector Art at Vecteezy](https://www.vecteezy.com/free-vector/podcast-mic)
+
+[How to Create Neon Text with CSS](https://css-tricks.com/how-to-create-neon-text-with-css/)

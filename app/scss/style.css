@@ -14,7 +14,14 @@ body {
   padding: 0;
   /* font-family: 'Playfair Display', serif; */
   font-family: 'Raleway', sans-serif;
+  font-size: 1.125rem;
+  font-weight: 400;
+  color: #9698a6;
   line-height: 1.3;
+}
+
+a, a:visited, a:hover {
+  text-decoration: none;
 }
 
 .flex {
@@ -39,5 +46,51 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+button, .button {
+  padding: 0.75rem 1.625rem;
+  border-radius: 40px;
+  background: #0a0a0a;
+  border: 0;
+  cursor: pointer;
+  color: red;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.header nav {
+  padding: 0.625rem 1.5rem;
+}
+
+.header__logo img {
+  height: 50px;
+  width: 150px;
+}
+
+.header__menu > span {
+  display: block;
+  width: 26px;
+  height: 2px;
+  background-color: #7e1334;
+}
+
+.header__menu > span:not(:last-child) {
+  margin-bottom: 3px;
+}
+
+.header__links a {
+  font-size: 0.875rem;
+  color: #9698a6;
+  text-transform: uppercase;
+}
+
+.header__cta {
+  font-size: 1.125rem;
+}
+
+.header__neonText {
+  color: #f00;
+  text-shadow: 0 0 7px #f00, 0 0 10px #f00, 0 0 21px #f00, 0 0 42px #faa, 0 0 82px #faa, 0 0 92px #faa, 0 0 102px #faa, 0 0 151px #faa;
 }
 /*# sourceMappingURL=style.css.map */

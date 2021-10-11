@@ -1,4 +1,33 @@
 .header {
+    
+    // Hamburger Open Styles
+    &.open {
+
+        .header__menu {
+            > span:first-child {
+                transform: rotate(45deg);
+            }
+
+            > span:nth-child(2) {
+                opacity: 0;
+            }
+
+            > span:last-child {
+                transform: rotate(-45deg);
+            }
+        }        
+    }
+
+    .overlay {
+        display: none;
+        position: fixed;
+        top: 70px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        background-image: linear-gradient($approxManatee, transparent);
+    }
+
     nav {
         padding: 0.625rem 1.5rem;
     }
@@ -16,9 +45,11 @@
             width: 26px;
             height: 2px;
             background-color: $approxClaret;
+            transition: all 300ms ease-in-out;
+            transform-origin: 3px 1px;
 
             &:not(:last-child) {
-                margin-bottom: 3px;
+                margin-bottom: 5px;
             }
         }
     }
@@ -26,14 +57,46 @@
     &__links {
 
         a {
+            position: relative;
             font-size: $font-sm;
             color: $approxManatee;
             text-transform: uppercase;
+            transition: color 300ms ease-in-out;
+
+            &:not(:last-child) {
+                margin-right: 32px;
+            }
+
+            &::before {
+                content: "";
+                display: block;
+                position: absolute;
+                height: 5px;
+                left: 0;
+                right: 0;
+                bottom: -28px;
+                background: $approxDeepSkyBlue;
+                opacity: 0;
+                transition: opacity 300ms ease-in-out;
+            }
+
+            &:hover {
+                color: $approxDeepSkyBlue;
+
+                &::before {                    
+                    opacity: 1;
+                }
+            }
         }
     }
 
     &__cta {
         font-size: $font-med;
+        transition: opacity 300ms ease-in-out;
+
+        &:hover {
+            opacity: 0.8;
+        }
     }
 
     &__neonText {

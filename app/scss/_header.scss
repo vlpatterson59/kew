@@ -19,13 +19,17 @@
     }
 
     .overlay {
-        display: none;
+        opacity: 0;
         position: fixed;
         top: 70px;
         right: 0px;
         bottom: 0px;
         left: 0px;
         background-image: linear-gradient($approxManatee, transparent);
+
+        &.fade-in {
+            display: block;
+        }
     }
 
     nav {

@@ -1,6 +1,7 @@
 .hero {
     background-color: $approxBabyBlue;
     z-index: -1;
+    overflow: hidden;
     
     &__image {
         position: relative;
@@ -21,28 +22,44 @@
             background-repeat: no-repeat;
             background-position-x: right -1rem;
             background-position-y: bottom -5rem;
+            z-index: 500;
         }
     }
 
     &__text {
+        position: absolute;
+        top: 20%;
+        left: 40%;
+        text-align: center;
+        z-index: 1000;
+        
         h1 {
             font-family: 'Playfair Display', serif;
+            font-size: 2.3125rem;
             font-weight: 300;
+            line-height: 1.15;
             color: $approxBlack;
+        }
+
+        p {
+            line-height: 1.5;
+            color: $spectrum;
         }
     }
 }
 
 .border-animation {
     position: absolute;
-    top: 30%;
-    left: 2rem;
-    width: 10rem;
-    height: 10rem;
-    border: 0.55rem solid $approxHoneydew;
+    top: 35%;
+    left: -8rem;
+    width: 18rem;
+    height: 8rem;
+    border: 0.35rem solid $approxHoneydew;
     border-radius: 50%;
+    border-left-color: transparent;
     animation: pulse-border 2s linear infinite;
     z-index: 1;
+    clip-path: polygon(0 45%, 100% 40%, 100% 60%, 0 55%);
 
     &__border-1 {
         animation-delay: 1s;

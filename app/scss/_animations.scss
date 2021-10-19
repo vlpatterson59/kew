@@ -50,11 +50,13 @@
         transform: scale(1);
         opacity: 1;
     }
-
-
+    
+    75% {
+        opacity: .8;
+    }
 
     100% {
-        transform: scale(10);
+        transform: scale(8);
         opacity: 0;
     }
 }

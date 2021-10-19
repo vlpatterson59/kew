@@ -78,9 +78,12 @@
             transform: scale(1);
     opacity: 1;
   }
+  75% {
+    opacity: .8;
+  }
   100% {
-    -webkit-transform: scale(10);
-            transform: scale(10);
+    -webkit-transform: scale(8);
+            transform: scale(8);
     opacity: 0;
   }
 }
@@ -91,9 +94,12 @@
             transform: scale(1);
     opacity: 1;
   }
+  75% {
+    opacity: .8;
+  }
   100% {
-    -webkit-transform: scale(10);
-            transform: scale(10);
+    -webkit-transform: scale(8);
+            transform: scale(8);
     opacity: 0;
   }
 }
@@ -122,6 +128,11 @@ body {
 
 body.noscroll {
   overflow: hidden;
+}
+
+h1, h2, h3, p {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
 }
 
 a, a:visited, a:hover {
@@ -203,6 +214,7 @@ button, .button {
   left: 0px;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#9698a6), to(transparent));
   background-image: linear-gradient(#9698a6, transparent);
+  z-index: 1000;
 }
 
 .header .overlay.fade-in {
@@ -214,6 +226,7 @@ button, .button {
   background-color: #fafaf6;
   padding-top: 0.625rem;
   padding-bottom: 0.625rem;
+  z-index: 2000;
 }
 
 .header__logo img {
@@ -246,6 +259,7 @@ button, .button {
   margin-top: 1.5rem;
   padding: 1.625rem;
   border-radius: 5px;
+  z-index: 3000;
 }
 
 .header__menu a {
@@ -308,6 +322,7 @@ button, .button {
 .hero {
   background-color: #74f9ff;
   z-index: -1;
+  overflow: hidden;
 }
 
 .hero__image {
@@ -330,25 +345,44 @@ button, .button {
   background-repeat: no-repeat;
   background-position-x: right -1rem;
   background-position-y: bottom -5rem;
+  z-index: 500;
+}
+
+.hero__text {
+  position: absolute;
+  top: 20%;
+  left: 40%;
+  text-align: center;
+  z-index: 1000;
 }
 
 .hero__text h1 {
   font-family: 'Playfair Display', serif;
+  font-size: 2.3125rem;
   font-weight: 300;
+  line-height: 1.15;
   color: #0a0a0a;
+}
+
+.hero__text p {
+  line-height: 1.5;
+  color: #4f4f4f;
 }
 
 .border-animation {
   position: absolute;
-  top: 30%;
-  left: 2rem;
-  width: 10rem;
-  height: 10rem;
-  border: 0.55rem solid #e8ffe8;
+  top: 35%;
+  left: -8rem;
+  width: 18rem;
+  height: 8rem;
+  border: 0.35rem solid #e8ffe8;
   border-radius: 50%;
+  border-left-color: transparent;
   -webkit-animation: pulse-border 2s linear infinite;
           animation: pulse-border 2s linear infinite;
   z-index: 1;
+  -webkit-clip-path: polygon(0 45%, 100% 40%, 100% 60%, 0 55%);
+          clip-path: polygon(0 45%, 100% 40%, 100% 60%, 0 55%);
 }
 
 .border-animation__border-1 {

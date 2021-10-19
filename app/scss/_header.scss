@@ -26,6 +26,7 @@
         bottom: 0px;
         left: 0px;
         background-image: linear-gradient($approxManatee, transparent);
+        z-index: 1000;
 
         &.fade-in {
             display: block;
@@ -37,6 +38,7 @@
         background-color: $approxIvory;
         padding-top: 0.625rem;
         padding-bottom: 0.625rem;
+        z-index: 2000;
     }
 
     &__logo {
@@ -71,6 +73,7 @@
         margin-top: 1.5rem;
         padding: 1.625rem;
         border-radius: 5px;
+        z-index: 3000;
 
         a {
             display: block;

@@ -72,6 +72,32 @@
           animation: fade-out 300ms ease-in-out forwards;
 }
 
+@-webkit-keyframes pulse-border {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(10);
+            transform: scale(10);
+    opacity: 0;
+  }
+}
+
+@keyframes pulse-border {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(10);
+            transform: scale(10);
+    opacity: 0;
+  }
+}
+
 html {
   font-size: 100%;
   -webkit-box-sizing: border-box;
@@ -277,5 +303,66 @@ button, .button {
 .header__neonText {
   color: #f00;
   text-shadow: 0 0 7px #f00, 0 0 10px #f00, 0 0 21px #f00, 0 0 42px #faa, 0 0 82px #faa, 0 0 92px #faa, 0 0 102px #faa, 0 0 151px #faa;
+}
+
+.hero {
+  background-color: #74f9ff;
+  z-index: -1;
+}
+
+.hero__image {
+  position: relative;
+  background-image: url("/images/cranium1.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-x: left -2rem;
+  min-height: 17.5rem;
+  z-index: 100;
+}
+
+.hero__image::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("/images/micro-5095179_640.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-x: right -1rem;
+  background-position-y: bottom -5rem;
+}
+
+.hero__text h1 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 300;
+  color: #0a0a0a;
+}
+
+.border-animation {
+  position: absolute;
+  top: 30%;
+  left: 2rem;
+  width: 10rem;
+  height: 10rem;
+  border: 0.55rem solid #e8ffe8;
+  border-radius: 50%;
+  -webkit-animation: pulse-border 2s linear infinite;
+          animation: pulse-border 2s linear infinite;
+  z-index: 1;
+}
+
+.border-animation__border-1 {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.border-animation__border-2 {
+  -webkit-animation-delay: 1.25s;
+          animation-delay: 1.25s;
+}
+
+.border-animation__border-3 {
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
 }
 /*# sourceMappingURL=style.css.map */

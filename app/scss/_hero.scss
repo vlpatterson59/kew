@@ -1,0 +1,58 @@
+.hero {
+    background-color: $approxBabyBlue;
+    z-index: -1;
+    
+    &__image {
+        position: relative;
+        background-image: url('/images/cranium1.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position-x: left -2rem;
+        min-height: 17.5rem;
+        z-index: 100;
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-image: url('/images/micro-5095179_640.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position-x: right -1rem;
+            background-position-y: bottom -5rem;
+        }
+    }
+
+    &__text {
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 300;
+            color: $approxBlack;
+        }
+    }
+}
+
+.border-animation {
+    position: absolute;
+    top: 30%;
+    left: 2rem;
+    width: 10rem;
+    height: 10rem;
+    border: 0.55rem solid $approxHoneydew;
+    border-radius: 50%;
+    animation: pulse-border 2s linear infinite;
+    z-index: 1;
+
+    &__border-1 {
+        animation-delay: 1s;
+    }
+
+    &__border-2 {
+        animation-delay: 1.25s;
+    }
+
+    &__border-3 {
+        animation-delay: 1.5s;
+    }
+}

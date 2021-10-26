@@ -1,3 +1,48 @@
 .about {
     background: linear-gradient(90deg, rgba(0,224,255,1) 0%, rgba(166,255,242,1) 100%);
+    display: flex;
+    margin-top: -1rem;
+    padding-top: 2rem;
+    align-items: center;
+
+    h1 {
+        font-family: 'Playfair Display', serif;
+        font-size: 2.3125rem;
+        font-weight: 300;
+        line-height: 1.15;
+        color: $approxBlack;
+    }
+
+    p, li {
+        color: $spectrum;
+    }
+
+    li {
+        list-style-image: url("/images/mic.png");
+    }
+
+    &__text {
+        @include breakpoint-up(large) {
+            flex: 5;
+            order: 1;
+        }
+
+        margin: auto 5%;
+        flex: 1;
+    }
+    
+    &__image {
+        @include breakpoint-up(large) {
+            flex: 3;
+            order: 2;
+        }
+
+
+        img {
+            width: 80%;
+            border-radius: 50%;
+            box-shadow: 10px 10px 20px 1px $approxMariner;
+            flex: 1;
+        }
+    }
 }

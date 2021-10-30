@@ -18,17 +18,24 @@
     }
 
     li {
+        @include breakpoint-up(large) {
+            font-size: 1.1rem;
+            line-height: 1.7rem;
+        }
         list-style-image: url("/images/mic.png");
+        font-size: 0.7rem;
     }
 
     &__text {
         @include breakpoint-up(large) {
             flex: 5;
             order: 1;
+            font-size: 1.1rem;
         }
 
+        font-size: 0.7rem;
         margin: auto 5%;
-        flex: 1;
+        order: 1;
     }
     
     &__image {
@@ -42,7 +49,8 @@
             width: 80%;
             border-radius: 50%;
             box-shadow: 10px 10px 20px 1px $approxMariner;
-            flex: 1;
+            order: 2;
+            margin: auto 5%;
         }
     }
 }

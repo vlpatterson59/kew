@@ -1,0 +1,87 @@
+.footer {
+    background-color: $approxManatee;
+    columns: $White;
+    padding: 2.5rem;
+    text-align: center;
+
+    @include breakpoint-up(large) {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr) 2fr;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas:
+            "logo links1 links2 cta"
+            "social links1 links2 cta";
+    }
+
+    a {
+        color: $White;
+    }
+
+    &__logo {
+        width: 12rem;
+        display: inline-block;
+        margin-bottom: 1.875rem;
+
+        @include breakpoint-up(large) {
+            grid-area: logo;
+        }
+    }
+
+    &__social {
+        margin-bottom: 1.875rem;
+
+        @include breakpoint-up(large) {
+            grid-area: social;
+        }
+
+        a {
+            display: inline-block;
+        }
+
+        a:not(:last-child) {            
+            margin-right: 1rem;
+        }
+
+        img {
+            width: 2.75rem;
+        }
+    }
+
+    &__links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &.col1 {
+            @include breakpoint-up(large) {
+                grid-area: links1;
+            }
+        }
+
+        &.col2 {
+            margin-bottom: 1.875rem;
+
+            @include breakpoint-up(large) {
+                grid-area: links2;
+            }
+        }
+
+        a {
+            line-height: 2.25rem;
+        }
+    }
+
+    &__cta {
+        @include breakpoint-up(large) {
+            grid-area: cta;
+        }
+
+        a.button {
+            margin-bottom: 1.875rem;
+        }
+    }
+
+    &__copyright {
+
+    }
+}

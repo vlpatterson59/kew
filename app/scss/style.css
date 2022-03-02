@@ -551,6 +551,30 @@ button, .button {
   color: #4f4f4f;
 }
 
+.samples__text {
+  font-size: 0.7rem;
+  margin: auto 5%;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+@media (min-width: 64em) {
+  .samples__text {
+    -webkit-box-flex: 5;
+        -ms-flex: 5;
+            flex: 5;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    font-size: 1.1rem;
+  }
+}
+
+.samples .accordion {
+  width: 50%;
+}
+
 .setup {
   background: -webkit-gradient(linear, left top, right top, from(#00e0ff), to(#a6fff2));
   background: linear-gradient(90deg, #00e0ff 0%, #a6fff2 100%);
@@ -576,6 +600,26 @@ button, .button {
   color: #4f4f4f;
 }
 
+.setup__text {
+  font-size: 0.7rem;
+  margin: auto 5%;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+@media (min-width: 64em) {
+  .setup__text {
+    -webkit-box-flex: 5;
+        -ms-flex: 5;
+            flex: 5;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    font-size: 1.1rem;
+  }
+}
+
 .contact {
   background: -webkit-gradient(linear, left top, right top, from(#00e0ff), to(#a6fff2));
   background: linear-gradient(90deg, #00e0ff 0%, #a6fff2 100%);
@@ -599,6 +643,26 @@ button, .button {
 
 .contact p {
   color: #4f4f4f;
+}
+
+.contact__text {
+  font-size: 0.7rem;
+  margin: auto 5%;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+@media (min-width: 64em) {
+  .contact__text {
+    -webkit-box-flex: 5;
+        -ms-flex: 5;
+            flex: 5;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    font-size: 1.1rem;
+  }
 }
 
 .footer {

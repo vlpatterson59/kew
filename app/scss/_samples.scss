@@ -16,4 +16,20 @@
     p {
         color: $spectrum;
     }
+
+    &__text {
+        @include breakpoint-up(large) {
+            flex: 5;
+            order: 1;
+            font-size: 1.1rem;
+        }
+
+        font-size: 0.7rem;
+        margin: auto 5%;
+        order: 1;
+    }
+
+    .accordion {
+        width: 50%
+    }
 }

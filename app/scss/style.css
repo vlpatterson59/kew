@@ -340,7 +340,14 @@ button, .button {
 
 .header__neonText {
   color: #f00;
-  text-shadow: 0 0 7px #f00, 0 0 10px #f00, 0 0 21px #f00, 0 0 42px #faa, 0 0 82px #faa, 0 0 92px #faa, 0 0 102px #faa, 0 0 151px #faa;
+  text-shadow: 0 0 7px #f00,
+ 0 0 10px #f00,
+ 0 0 21px #f00,
+ 0 0 42px #faa,
+ 0 0 82px #faa,
+ 0 0 92px #faa,
+ 0 0 102px #faa,
+ 0 0 151px #faa;
 }
 
 .hero {
@@ -735,7 +742,14 @@ button, .button {
 
 .contact__neonText {
   color: #f00;
-  text-shadow: 0 0 7px #f00, 0 0 10px #f00, 0 0 21px #f00, 0 0 42px #faa, 0 0 82px #faa, 0 0 92px #faa, 0 0 102px #faa, 0 0 151px #faa;
+  text-shadow: 0 0 7px #f00,
+ 0 0 10px #f00,
+ 0 0 21px #f00,
+ 0 0 42px #faa,
+ 0 0 82px #faa,
+ 0 0 92px #faa,
+ 0 0 102px #faa,
+ 0 0 151px #faa;
 }
 
 .footer {
@@ -753,7 +767,8 @@ button, .button {
         grid-template-columns: repeat(3, 1fr) 2fr;
     -ms-grid-rows: (1fr)[2];
         grid-template-rows: repeat(2, 1fr);
-        grid-template-areas: "logo links1 links2 cta" "social links1 links2 cta";
+        grid-template-areas: "logo links1 links2 cta"
+ "social links1 links2 cta";
   }
 }
 

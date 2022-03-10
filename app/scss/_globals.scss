@@ -31,6 +31,10 @@ a, a:visited, a:hover {
     text-decoration: none;
 }
 
+section {
+    padding-bottom: 1rem;
+}
+
 // Spacing
 .container {
     padding-right: 1.5rem;
@@ -73,24 +77,25 @@ button, .button {
     }
   }
   
-  .hide-for-desktop {
-    @include breakpoint-up(large) {
-      display: none;
-    }
-  }
+.hide-for-desktop {
+@include breakpoint-up(large) {
+    display: none;
+}
+}
 
-  .divider {
-      min-height: 5rem;
+.divider {
+    min-height: 5rem;
     background: linear-gradient(90deg, rgba(0,224,255,1) 0%, rgba(166,255,242,1) 100%) url(/images/sound-waves-transparent-background-5.png) repeat-x center center;
-  }
+}
 
-  .svg-top, .svg-bottom {
-      min-width: 100%;
-      height: 3rem;
-      background: linear-gradient(90deg, rgba(0,224,255,1) 0%, rgba(166,255,242,1) 100%);
-  }
+.svg-top, .svg-bottom {
+    min-width: 100%;
+    height: 3rem;
+    background: linear-gradient(90deg, rgba(0,224,255,1) 0%, rgba(166,255,242,1) 100%);
+}
 
-  .svg-bottom {
+.svg-bottom {
     transform: scaleY(-1);
     margin-top: -1rem;
-  }
+    margin-bottom: 1rem;
+}

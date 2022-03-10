@@ -28,4 +28,87 @@
         margin: auto 5%;
         order: 1;
     }
+
+    .thm-btn {
+        position: relative;
+        display: inline-block;
+        vertical-align: middle;
+        -webkit-appearance: none;
+        border:none;
+        outline: none !important;
+        backface-visibility: hidden;
+        background-color: var($approxBlack, #fc653c);
+        color: var($approxIvory, #ffffff);
+        font-size: 16px;
+        font-weight: 700;
+        padding: 14px 50px;
+        transition: 500ms;
+        border-radius: 32px;
+        overflow: hidden; 
+    }
+
+    .faqs-contact {
+        position: relative;
+        display: block;
+        padding: 120px 0 120px;
+
+        &__btn {
+            display: block;
+            margin: 0 auto;
+            text-transform: inherit;
+        }
+    }
+
+    .comment-form {
+        margin-top: -1px;
+
+        &__input-box input[type="text"] {
+            height: 65px;
+            width: 100%;
+            border: none;
+            background: #f1f1f5;
+            padding-left: 30px;
+            padding-right: 30px;
+            margin-bottom: 20px;
+            border-radius: 30px;
+            outline: none;
+            font-size: 14px;
+            display: block;
+        }
+
+        &__input-box textarea {
+            font-size: 14px;
+            height: 170px;
+            width: 100%;
+            background: #f1f1f5;
+            padding: 20px 30px 30px;
+            border: none;
+            border-radius: 0px;
+            outline: none;
+            margin-bottom: 10px;
+            border-radius: 10px;
+        }
+    }
+
+    &__neonText {
+        color: #f00;
+        text-shadow:
+            0 0 7px #f00,
+            0 0 10px #f00,
+            0 0 21px #f00,
+            0 0 42px #faa,
+            0 0 82px #faa,
+            0 0 92px #faa,
+            0 0 102px #faa,
+            0 0 151px #faa;
+    }
+
+    &__cta {
+        font-size: $font-med;
+        transition: opacity 300ms ease-in-out;
+
+        &:hover {
+            opacity: 0.8;
+        }
+    }
 }

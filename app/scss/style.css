@@ -139,6 +139,10 @@ a, a:visited, a:hover {
   text-decoration: none;
 }
 
+section {
+  padding-bottom: 1rem;
+}
+
 .container {
   padding-right: 1.5rem;
   padding-left: 1.5rem;
@@ -208,6 +212,7 @@ button, .button {
   -webkit-transform: scaleY(-1);
           transform: scaleY(-1);
   margin-top: -1rem;
+  margin-bottom: 1rem;
 }
 
 .header.open .header__toggle > span:first-child {
@@ -665,10 +670,87 @@ button, .button {
   }
 }
 
+.contact .thm-btn {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-appearance: none;
+  border: none;
+  outline: none !important;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  background-color: var(#0a0a0a, #fc653c);
+  color: var(#fafaf6, #ffffff);
+  font-size: 16px;
+  font-weight: 700;
+  padding: 14px 50px;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  border-radius: 32px;
+  overflow: hidden;
+}
+
+.contact .faqs-contact {
+  position: relative;
+  display: block;
+  padding: 120px 0 120px;
+}
+
+.contact .faqs-contact__btn {
+  display: block;
+  margin: 0 auto;
+  text-transform: inherit;
+}
+
+.contact .comment-form {
+  margin-top: -1px;
+}
+
+.contact .comment-form__input-box input[type="text"] {
+  height: 65px;
+  width: 100%;
+  border: none;
+  background: #f1f1f5;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-bottom: 20px;
+  border-radius: 30px;
+  outline: none;
+  font-size: 14px;
+  display: block;
+}
+
+.contact .comment-form__input-box textarea {
+  font-size: 14px;
+  height: 170px;
+  width: 100%;
+  background: #f1f1f5;
+  padding: 20px 30px 30px;
+  border: none;
+  border-radius: 0px;
+  outline: none;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.contact__neonText {
+  color: #f00;
+  text-shadow: 0 0 7px #f00, 0 0 10px #f00, 0 0 21px #f00, 0 0 42px #faa, 0 0 82px #faa, 0 0 92px #faa, 0 0 102px #faa, 0 0 151px #faa;
+}
+
+.contact__cta {
+  font-size: 1.125rem;
+  -webkit-transition: opacity 300ms ease-in-out;
+  transition: opacity 300ms ease-in-out;
+}
+
+.contact__cta:hover {
+  opacity: 0.8;
+}
+
 .footer {
   background-color: #0a0a0a;
-  -webkit-columns: white;
-          columns: white;
+  color: white;
   padding: 2.5rem;
   text-align: center;
 }

@@ -738,16 +738,6 @@ button, .button {
   text-shadow: 0 0 7px #f00, 0 0 10px #f00, 0 0 21px #f00, 0 0 42px #faa, 0 0 82px #faa, 0 0 92px #faa, 0 0 102px #faa, 0 0 151px #faa;
 }
 
-.contact__cta {
-  font-size: 1.125rem;
-  -webkit-transition: opacity 300ms ease-in-out;
-  transition: opacity 300ms ease-in-out;
-}
-
-.contact__cta:hover {
-  opacity: 0.8;
-}
-
 .footer {
   background-color: #0a0a0a;
   color: white;
@@ -845,6 +835,10 @@ button, .button {
 }
 
 .footer__cta a.button {
-  margin-bottom: 1.875rem;
+  margin-bottom: 2.875rem;
+}
+
+.footer__copyright {
+  padding-top: 5rem;
 }
 /*# sourceMappingURL=style.css.map */
